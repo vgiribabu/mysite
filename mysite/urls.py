@@ -22,3 +22,4 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('student/', include('student.urls')),
 ]
+#cssknkjfnfn
