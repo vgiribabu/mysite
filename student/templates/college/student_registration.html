@@ -1,0 +1,20 @@
+<form action="." method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Student Name: <input type="text" name="student-name"><br>
+    Username: <input type="text" name="username"><br>
+    Password: <input type="password" name="password"><br>
+    Student Email: <input type="email" name="student-email"><br>
+    Student Father Name: <input type="text" name="student-father"><br>
+    Student Mother Name: <input type="text" name="student-mother"><br>
+    Student Mobile Number: <input type="text" name="student-mobile"><br>
+    Student Profile Photo: <input type="file" name="student-profile"><br>
+    Student Department:
+    <select name="dept">
+        <option value="Mechanical">Mechanical</option>
+        <option value="Civil">Civil</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="CSE">CSE</option>
+    </select>
+    <input type="submit" value="Register">
+</form>

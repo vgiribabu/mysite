@@ -1,0 +1,9 @@
+{% if users %}
+{% for each in users %}
+<ul>
+    <li>{{each.username}}<br>
+        {{each.email}}<br>
+    </li>
+</ul>
+{% endfor %}
+{% endif %}

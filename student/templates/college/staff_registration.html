@@ -1,0 +1,20 @@
+<form action="." method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Staff Name: <input type="text" name="staff-name"><br>
+    Username: <input type="text" name="username"><br>
+    Password: <input type="password" name="password"><br>
+    Staff Email: <input type="email" name="staff-email"><br>
+    Staff Father Name: <input type="text" name="staff-father"><br>
+    Staff Mother Name: <input type="text" name="staff-mother"><br>
+    Staff Profile Photo: <input type="file" name="staff-Profile"><br>
+    Staff Mobile: <input type="text" name="staff-mobile"><br>
+    Staff Department:
+    <select name="dep">
+        <option value="Mechanical">Mechanical</option>
+        <option value="Civill">Civil</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="CSE">CSE</option>
+    </select>
+    <input type="submit" value="Register">
+</form>

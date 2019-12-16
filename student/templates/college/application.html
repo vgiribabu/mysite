@@ -1,0 +1,8 @@
+<form action="." method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Student Name: <input type="text" name="Student_name"><br>
+    Student Email: <input type="email" name="email"><br>
+    SSC Memo: <input type="file" name="ssc-memo"><br>
+    InterMediate Memo: <input type="file" name="inter-memo"><br>
+    <input type="submit" value="Apply">
+</form>

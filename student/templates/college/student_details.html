@@ -1,0 +1,11 @@
+{% if stu_det %}
+StudentName: {{stu_det.student_name}}<br>
+Student Email:{{stu_det.student_email}}<br>
+Student FatherName:{{stu_det.student_father_name}}<br>
+Student MotherName:{{stu_det.student_mother_name}}<br>
+Student Mobile:{{stu_det.student_mobile}}<br>
+Student Profile Photo:<img src="{{stu_det.student_profile_photo.url}}" height="100" width="100" alt="No Image"><br>
+Student Department:{{stu_det.department}}<br>
+{% endif %}
+<br>
+<a href="{% url 'student:student-staff-list'%}">StaffList</a>

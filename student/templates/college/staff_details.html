@@ -1,0 +1,9 @@
+{% if sta_det %}
+StaffName: {{sta_det.staff_name}}<br>
+Staff Email:{{sta_det.staff_email}}<br>
+Staff FatherName:{{sta_det.staff_father_name}}<br>
+Staff MotherName:{{sta_det.staff_mother_name}}<br>
+Staff Profile Photo: <img src="{{sta_det.staff_profile_photo.url}}" height="100" width="100" alt="no image"> <br>
+Staff Mobile:{{sta_det.staff_mobile}}<br>
+Staff Department:{{sta_det.department}}<br>
+{% endif %}

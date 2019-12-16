@@ -1,0 +1,11 @@
+{% if check%}
+<b>Name :</b> {{check.name}}<br>
+<b>Ingredients :</b> {{check.ingredients}}<br>
+<b>Process :</b> {{check.process}}<br>
+<b>Date of preparation :</b> {{check.date}}
+{%endif%}
+<br>
+<a href="{% url 'recipes:index' %}"> <h3><b> Back </b></h3> </a>
+<br>
+<br>
+<a href="{% url 'recipes:login' %}">Logout</a>
